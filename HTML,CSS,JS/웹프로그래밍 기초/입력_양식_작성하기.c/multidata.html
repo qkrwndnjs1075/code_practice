@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>배송정보</legend>
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name" />
+          </li>
+
+          <li>
+            <label for="add">배송 주소</label>
+            <input type="text" id="add" />
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" id="email" />
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" />
+          </li>
+          <li>
+            <label for="day">배송 지정</label>
+            <input type="date" id="day" /> <small>(주문일로부터 최소 3일 이후)</small>
+          </li>
+
+          <li>
+            <label for="memo"> 메모</label>
+            <textarea id="memo" cols="40" rows="4"></textarea>
+          </li>
+          <li>
+            <label for="prod1">상품 선택</label>
+            <select id="prod1">
+              <option value="special3" selected>선물용 3kg</option>
+              <option value="special5">선물용 5kg</option>
+              <option value="family3">가정용 3kg</option>
+              <option value="family5">가정용 5kg</option>
+            </select>
+          </li>
+          <li>
+            <label for="prod2">포장 여부</label>
+            <input type="text" id="prod2" list="pack" />
+            <datalist id="pack">
+              <option value="package">선물 포장</option>
+              <option value="no_package">포장 안 함</option>
+            </datalist>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">주문하기</button>
+      <button type="reset">취소하기</button>
+      <ul>
+        <li>
+          <hr />
+          <label for="path">가입 경로</label>
+          <select id="path">
+            <option value="blog">블로그</option>
+            <option value="search">검색</option>
+            <option value="sns">SNS</option>
+            <option value="etc">기타</option>
+          </select>
+        </li>
+        <li>
+          <label for="memo">메모</label>
+          <textarea cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
